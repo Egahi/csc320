@@ -1,7 +1,7 @@
 '''
 Insertion Sort
 
-Given a array, A
+Given an array, A
 
 for i = 2 to A.length
     key = a[i]
