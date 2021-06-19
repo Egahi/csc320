@@ -3,19 +3,14 @@ Selection Sort
 
 Given an array A
 
-for i = 1 to A.length - 1
-    // select the minimum value from unsorted array A[i..A.length]
-    smallest_idx = i
-    j = i + 1
-    while j < A.length
-        if A[j] < A[smallest_idx]
-            smallest_idx = j
-        j = j + 1
+n = A.length
+for i = 1 to n - 1
+    smallest = i
+    for j = i + 1 to n
+        if A[j] < A[smallest]
+            smallest = j
     
-    // swap the minimum value with the first value of unsorted array A[i..A.length]
-    temp = A[i]
-    A[i] = A[smallest_idx]
-    A[smallest_idx] = temp
+    exchange A[i] with A[smallest]
 
 
 Runtime:
