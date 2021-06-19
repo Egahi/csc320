@@ -1,5 +1,17 @@
 '''
 Insertion Sort
+
+Given a array, A
+
+for i = 2 to A.length
+    key = a[i]
+    // insert key into sorted array A[0...i]
+    j = i - 1
+    while j > 0 and A[j] > key
+        A[j + 1] = A[j]
+        j = j - 1
+
+    A[j + 1] = key
 '''
 
 class InsertionSort:
