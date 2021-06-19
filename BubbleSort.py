@@ -3,20 +3,16 @@ Bubble Sort
 
 Given an array A
 
-for i = 1 to A.length
-    isSorted = True
+n = A.length
+for i = 1 to n
+    // compare and order adjacent values of unsorted Array A[1..n-i]
+    for j = 1 to n - i
+        if A[j] > A[j + 1]
+            exchange A[j] with A[j + 1]
 
-    // compare and order adjancent values of unsorted Array A[0..A.length-i]
-    for j = 1 to A.length - i
-        if A[j] > A[j+1]
-            temp = A[j]
-            A[j] = A[j+1]
-            A[j+1] = temp
-            isSorted = False
+    if array is sorted
+        break loop
 
-    // if array is sorted, break loop
-    if isSorted
-        break
 
 Runtime:
 Best case -> O(n)
