@@ -17,6 +17,10 @@ for i = 1 to A.length
     // if array is sorted, break loop
     if isSorted
         break
+
+Runtime:
+Best case -> O(n)
+Worst case -> O(n^2)
 '''
 
 class BubbleSort:

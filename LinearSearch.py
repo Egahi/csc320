@@ -10,6 +10,10 @@ for i = 1 to A.length
 
 return -1
 
+
+Runtime:
+Best case -> O(1)
+Worst case -> O(n)
 '''
 
 class LinearSearch:

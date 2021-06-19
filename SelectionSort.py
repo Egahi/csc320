@@ -16,6 +16,11 @@ for i = 1 to A.length - 1
     temp = A[i]
     A[i] = A[smallest_idx]
     A[smallest_idx] = temp
+
+
+Runtime:
+Best case -> O(n^2)
+Worst case -> O(n^2)
 '''
 
 class SelectionSort:

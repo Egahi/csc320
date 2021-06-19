@@ -12,6 +12,11 @@ for i = 2 to A.length
         j = j - 1
 
     A[j + 1] = key
+
+
+Runtime:
+Best case -> O(n)
+Worst case -> O(n^2)
 '''
 
 class InsertionSort:
