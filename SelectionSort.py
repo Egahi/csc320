@@ -3,14 +3,15 @@ Selection Sort
 
 Given an array A
 
-n = A.length
-for i = 1 to n - 1
-    smallest = i
-    for j = i + 1 to n
-        if A[j] < A[smallest]
-            smallest = j
-    
-    exchange A[i] with A[smallest]
+SelectionSort(A)
+    n = A.length
+    for i = 1 to n - 1
+        smallest = i
+        for j = i + 1 to n
+            if A[j] < A[smallest]
+                smallest = j
+        
+        exchange A[i] with A[smallest]
 
 
 Runtime:

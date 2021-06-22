@@ -4,11 +4,12 @@ Linear Search
 Given an array A, to search for an element, key. 
 Return the index of the key if found, otherwise return -1
 
-for i = 1 to A.length
-    if A[i] == key
-        return i
+Search(A, key)
+    for i = 1 to A.length
+        if A[i] == key
+            return i
 
-return -1
+    return -1
 
 
 Runtime:

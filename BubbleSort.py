@@ -3,15 +3,16 @@ Bubble Sort
 
 Given an array A
 
-n = A.length
-for i = 1 to n
-    // compare and order adjacent values of unsorted Array A[1..n-i]
-    for j = 1 to n - i
-        if A[j] > A[j + 1]
-            exchange A[j] with A[j + 1]
+BubbleSort(A)
+    n = A.length
+    for i = 1 to n
+        // compare and order adjacent values of unsorted Array A[1..n-i]
+        for j = 1 to n - i
+            if A[j] > A[j + 1]
+                exchange A[j] with A[j + 1]
 
-    if array is sorted
-        break loop
+        if array is sorted
+            break loop
 
 
 Runtime:
